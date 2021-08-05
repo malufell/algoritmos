@@ -1,3 +1,5 @@
+//fazer um algoritmo (programa) que consiga validar que todo ( aberto foi fechado )
+
 function verificaFechamentoParenteses(texto) {
   let pilha = [];
   
