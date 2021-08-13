@@ -1,0 +1,3 @@
+- Dado um vetor, ordenar esse vetor. Ex: o input é [4,1,2,7,8,9] e a saída é [1,2,4,7,8,9]
+- Imprima o vetor de saída e o tempo que levou para ordenar o vetor
+- Faça com vetores de tamanho 10, 1000, 10000, 100000, 1000000
