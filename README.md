@@ -28,6 +28,7 @@ Temp =   ?   >>   Temp = 10*  >>  Temp = 10   >>  Temp = 10
 ```
 
 - geração de números aleatórios sem repetição: algoritmo Fisher–Yates
+  - https://bost.ocks.org/mike/shuffle/
   - http://cangaceirojavascript.com.br/como-embaralhar-arrays-algoritmo-fisher-yates/
   - https://www.horadecodar.com.br/2020/10/26/gerar-varios-numeros-aleatorios-sem-repeticao-em-javascript/
 - console.time: https://nodejs.org/api/console.html#console_console_time_label
