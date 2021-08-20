@@ -1,23 +1,22 @@
 function criaVetor(maxNumeros) {
   let vetor = [];
   
-  for (let i = 1; i < maxNumeros + 1; i++) {
+  for (let i = 0; i < maxNumeros; i++) {
     vetor.push(Math.floor(Math.random() * maxNumeros));
   };
 
   return vetor;
 };
   
-function bubbleSort(vetorEmbaralhado) {
-  let vetor = vetorEmbaralhado;
+function bubbleSort(vetor) {
 
-  for(let i = vetor.length; i > 0; i--) {
+  for(let i = 0; i < vetor.length -1 ; i++) {
 
-    for(let j = 0; j < i - 1; j++) {
-      if(vetor[j] > vetor[j + 1]) {
-        let temp = vetor[j];
-        vetor[j] = vetor[j + 1];
-        vetor[j + 1] = temp;
+    for(let j = i + 1; j < vetor.length; j++) {
+      if(vetor[i] > vetor[j]) {
+        let aux = vetor[i];
+        vetor[i] = vetor[j];
+        vetor[j] = aux;
       };
     };
   };
