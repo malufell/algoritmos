@@ -19,32 +19,29 @@ function inserir(e) {
     fila[fim] = e;
     fim = (fim + 1) % fila.length;
     total++;
+    return console.log(e + " incluído!");
+  }; 
 
-    console.log(e + " incluído!");
-
-  } else {
-    console.log(e + " não inserido, fila cheia \n");
-  }
+  console.log(e + " não inserido, fila cheia \n");
 };
 
 function retirar(){
   const filaVazia = estaVazia();
   
   if(!filaVazia) {
-    let elemento = fila[inicio];
+    const elemento = fila[inicio];
     inicio = (inicio + 1) % fila.length;
     total--;
 
     console.log(elemento+ " retirado!");
     return elemento;
-
-  } else {
-    console.log("a fila está vazia! \n");
   };
+
+  console.log("a fila está vazia! \n");
 };
 
 function cancelar(e) {
-  let indice = fila.indexOf(e);
+  const indice = fila.indexOf(e);
   total--;
   
   if(indice == inicio) {
@@ -61,7 +58,7 @@ function cancelar(e) {
   const filaAux = new Array(tamFila);
   
   for(let i=0; i < fila.length; i++) {
-    const elemento = retirar(); //diminui total
+    let elemento = retirar(); //diminui total
     total++;
     filaAux[i] = elemento;
   };
@@ -82,11 +79,11 @@ inserir(1);
 inserir(2);
 inserir(5);
 
-console.log("\n")
 console.log("pedidos recebidos:");
 console.log(fila);
 
 console.log("\n");
+console.log("cancelando um pedido:");
 cancelar(1);
 console.log(fila);
 console.log("\n");
