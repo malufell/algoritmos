@@ -35,28 +35,28 @@ function obtemTempoExecucao(callback, algoritmo) {
 // 10
 const vetor1 = criaVetor(10);
 obtemTempoExecucao(_ => bubbleSort(vetor1), "bubbleSort");
-// resultado: 1.121ms
+// resultado: 1.074ms
 
 
 // 1000
 const vetor2 = criaVetor(1000);
 obtemTempoExecucao(_ => bubbleSort(vetor2), "bubbleSort");
-// resultado: 3.045ms
+// resultado: 4.826ms
 
 
 // 10000
 const vetor3 = criaVetor(10000);
 obtemTempoExecucao(_ => bubbleSort(vetor3), "bubbleSort");
-// resultado: 135.189ms (0,135189 segundos)
+// resultado: 155.033ms (0,155033 segundos)
 
 
 // 100000
 const vetor4 = criaVetor(100000);
 obtemTempoExecucao(_ => bubbleSort(vetor4), "bubbleSort");
-// resultado: 19308.267ms (19,308267 segundos)
+// resultado: 16945.090ms (16,94509 segundos)
 
 
 // 1000000
 const vetor5 = criaVetor(1000000);
 obtemTempoExecucao(_ => bubbleSort(vetor5), "bubbleSort");
-// resultado: 3540639.688ms (59 minutos)
+// resultado: 3063213.567ms (51 minutos)
